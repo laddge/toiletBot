@@ -44,7 +44,7 @@ def main():
             "/usr/share/figlet/*.tlf"
         )
         filelist = [os.path.splitext(os.path.basename(path))[0] for path in filelist]
-        res = "\n".join(filelist.sort())
+        res = "\n".join(sorted(filelist))
         await ctx.respond(f"```\n{res}\n```")
 
     bot.run(TOKEN)
