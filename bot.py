@@ -33,7 +33,7 @@ def main():
         if res.stderr:
             await ctx.respond(f"```\n{res.stderr}\n```")
         else:
-            await ctx.respond(f"```\n{res.stdout}\n```")
+            await ctx.respond(f"```\n​{res.stdout}\n```")
 
     @bot.slash_command(description="font list")
     async def fontlist(
